@@ -1,0 +1,53 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "markdown-table-generator",
+  "title": "Markdown Table Generator",
+  "description": "Specify your width and height, and receive a markdown table that you can input your own values into.",
+  "icon": "command-icon.png",
+  "author": "almatkai",
+  "contributors": ["Visual-Studio-Coder"],
+  "categories": ["Developer Tools"],
+  "license": "MIT",
+  "platforms": ["macOS", "Windows"],
+  "commands": [
+    {
+      "name": "generate-markdown-table",
+      "title": "Generate Markdown Table",
+      "subtitle": "Input width and height",
+      "description": "Based on the inputted integer arguments, number of rows and number of columns, you will receive a markdown table.",
+      "mode": "no-view",
+      "platforms": ["macOS", "Windows"],
+      "arguments": [
+        { "name": "rows", "placeholder": "# of Rows", "type": "text", "required": true },
+        { "name": "columns", "placeholder": "# of Columns", "type": "text", "required": true }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "id": "com.tezbar.markdown-table-generator",
+  "version": "0.1.0",
+  "tezbar": {
+    "schemaVersion": 1,
+    "platforms": ["macos", "windows"],
+    "repository": "https://github.com/almatkai/markdown-table-generator",
+    "upstream": {
+      "repository": "https://github.com/raycast/extensions",
+      "path": "extensions/markdown-table-generator",
+      "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a"
+    },
+    "linuxStatus": "coming-soon"
+  }
+}
