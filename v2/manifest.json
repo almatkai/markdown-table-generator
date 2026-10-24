@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "id": "com.tezbar.native.markdown-table-generator",
+  "slug": "markdown-table-generator",
+  "name": "Markdown Table Generator",
+  "version": "0.1.0",
+  "description": "Specify your width and height, and receive a markdown table that you can input your own values into. Native Rust port of the MIT extension by Visual-Studio-Coder.",
+  "icon": "/extensions/icons/markdown-table-generator.png",
+  "runtime": "rust",
+  "replaces": [
+    "raycast.markdown-table-generator"
+  ],
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "commands": [
+    {
+      "name": "generate-markdown-table",
+      "title": "Generate Markdown Table",
+      "subtitle": "Input width and height",
+      "description": "Based on the inputted integer arguments, number of rows and number of columns, you will receive a markdown table.",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "rows",
+          "placeholder": "# of Rows",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "columns",
+          "placeholder": "# of Columns",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "runtime": "rust"
+    }
+  ],
+  "verification": [
+    {
+      "platform": "macOS",
+      "state": "not-run",
+      "note": "Real desktop clipboard and launcher QA has not been run."
+    },
+    {
+      "platform": "Windows",
+      "state": "not-run",
+      "note": "Real desktop clipboard and launcher QA has not been run."
+    }
+  ]
+}

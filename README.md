@@ -24,3 +24,7 @@ pnpm build
 ## Credits
 
 Adapted for Tezbar from Raycast's MIT-licensed `markdown-table-generator` extension at upstream commit `6734d85992290066fd31a7f5bee3cca3d3545a1a`. Original author `Visual-Studio-Coder` remains credited in `package.json`.
+
+## Native V2
+
+See [the standalone Rust Native V2 port and host integration instructions](v2/README.md).
