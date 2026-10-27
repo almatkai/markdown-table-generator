@@ -1,0 +1,87 @@
+{
+  "packageLicense": "MIT AND Apache-2.0",
+  "originalAuthor": "Visual-Studio-Coder",
+  "files": [
+    {
+      "vendored": "tests/fixtures/upstream/generate-markdown-table.tsx",
+      "repository": "https://github.com/raycast/extensions",
+      "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a",
+      "path": "extensions/markdown-table-generator/src/generate-markdown-table.tsx",
+      "license": "MIT",
+      "sha256": "60d42a177209192b1a825dd42643c20578fd871bbe4023e1378c79858c8f1cbc",
+      "bytes": 1310
+    },
+    {
+      "vendored": "tests/fixtures/upstream/package.json",
+      "repository": "https://github.com/raycast/extensions",
+      "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a",
+      "path": "extensions/markdown-table-generator/package.json",
+      "license": "MIT",
+      "sha256": "ab1a182eb342847def4bbf90068ef332058138eec30f1e17c56d992ed7623c7b",
+      "bytes": 1472
+    },
+    {
+      "vendored": "assets/command-icon.png",
+      "repository": "https://github.com/raycast/extensions",
+      "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a",
+      "path": "extensions/markdown-table-generator/assets/command-icon.png",
+      "license": "MIT",
+      "sha256": "6b3465b10a40ed075938c17be1aa2a9235dabfb43423a2ff7fd3f4dd24895bc1",
+      "bytes": 177356
+    },
+    {
+      "vendored": "licenses/MIT.txt",
+      "repository": "https://github.com/raycast/extensions",
+      "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a",
+      "path": "LICENSE",
+      "license": "MIT",
+      "sha256": "7f727f8b20cdd0e65f84e70b9cac2fce337dcecee4dc88955eb012ea27f02755",
+      "bytes": 1064
+    },
+    {
+      "vendored": "tests/fixtures/beta/common.rs",
+      "repository": "Tezbar beta",
+      "commit": "fd300e276356587726566026f072563eb9c34cb1",
+      "path": "src-tauri/src/native_core/common.rs",
+      "license": "Apache-2.0",
+      "sha256": "280a0a2f0dd04a8570b320aafc0c3ece0f5de8ddb21c363645567d6a35d84da7",
+      "bytes": 7627
+    },
+    {
+      "vendored": "tests/fixtures/beta/v2_sdk.rs",
+      "repository": "Tezbar beta",
+      "commit": "fd300e276356587726566026f072563eb9c34cb1",
+      "path": "src-tauri/src/native_core/extensions/v2_sdk.rs",
+      "license": "Apache-2.0",
+      "sha256": "4f987346f863db9a7bd6aa1d5a99e149925dc69a44d629727ccc80a567cd27c2",
+      "bytes": 6755
+    },
+    {
+      "vendored": "tests/fixtures/beta/extension-v2.schema.json",
+      "repository": "Tezbar beta",
+      "commit": "fd300e276356587726566026f072563eb9c34cb1",
+      "path": "schemas/extension-v2.schema.json",
+      "license": "Apache-2.0",
+      "sha256": "6d5afda1b652605982104bdf16d1547547b98dfd707a7b2969316406c49f32af",
+      "bytes": 2420
+    },
+    {
+      "vendored": "tests/fixtures/beta/NATIVE_V2_FORMAT.md",
+      "repository": "Tezbar beta",
+      "commit": "fd300e276356587726566026f072563eb9c34cb1",
+      "path": "docs/NATIVE_V2_FORMAT.md",
+      "license": "Apache-2.0",
+      "sha256": "8bf9315ad047326dd6737587ca5491fc35faf5e3f92a2d9c63f596be0c8f7b7a",
+      "bytes": 2593
+    },
+    {
+      "vendored": "licenses/Apache-2.0.txt",
+      "repository": "Tezbar beta",
+      "commit": "fd300e276356587726566026f072563eb9c34cb1",
+      "path": "LICENSE",
+      "license": "Apache-2.0",
+      "sha256": "0ed6b1b2760294d4aaaa45be38e166fcc0168e1dd5190423c096fcbe1c94afbf",
+      "bytes": 10750
+    }
+  ]
+}
