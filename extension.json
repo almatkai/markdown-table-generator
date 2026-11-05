@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 3,
+  "id": "com.tezbar.native.markdown-table-generator",
+  "slug": "markdown-table-generator",
+  "name": "Markdown Table Generator",
+  "version": "0.1.0",
+  "description": "Specify your width and height, and receive a markdown table that you can input your own values into.",
+  "author": "almatkai",
+  "icon": "resources/assets/command-icon.png",
+  "runtime": "rust",
+  "execution": "process",
+  "protocolVersion": 1,
+  "repository": "https://github.com/almatkai/markdown-table-generator",
+  "replaces": [
+    "raycast.markdown-table-generator"
+  ],
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "preferences": [],
+  "commands": [
+    {
+      "name": "generate-markdown-table",
+      "title": "Generate Markdown Table",
+      "subtitle": "Input width and height",
+      "description": "Based on the inputted integer arguments, number of rows and number of columns, you will receive a markdown table.",
+      "mode": "no-view",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "arguments": [
+        {
+          "name": "rows",
+          "placeholder": "# of Rows",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "columns",
+          "placeholder": "# of Columns",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "runtime": "rust",
+      "concurrency": "serialize",
+      "refreshMs": null
+    }
+  ],
+  "capabilities": [
+    "clipboard.write"
+  ],
+  "migrationPaths": {},
+  "artifacts": {},
+  "files": {},
+  "verification": [
+    {
+      "platform": "macOS",
+      "state": "not-run",
+      "note": "Real desktop launcher and clipboard QA remains unverified."
+    },
+    {
+      "platform": "Windows",
+      "state": "not-run",
+      "note": "Real desktop launcher and clipboard QA remains unverified."
+    }
+  ]
+}

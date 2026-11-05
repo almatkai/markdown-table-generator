@@ -1,0 +1,48 @@
+{
+  "schema": {
+    "source": "https://github.com/almatkai/Tezbar",
+    "commit": "d77f03b12a93d72cd2a56a73faa1a04fae94a2cd",
+    "path": "schemas/extension-v3.schema.json",
+    "sha256": "6f42f0316aa88097703496e828b11afcc7caecf8477fa7502df903c3ad2a8048",
+    "license": "Apache-2.0"
+  },
+  "engine": {
+    "path": "v2/src/lib.rs",
+    "sha256": "448816566b87510a0ac52cf001995683c8333eafd4f67f25a8e7d8aec95405bb",
+    "unchangedFromCommit": "9ca0abd",
+    "license": "MIT"
+  },
+  "sdk": {
+    "git": "https://github.com/almatkai/tezbar-extension-sdk-rust.git",
+    "rev": "aaec571673ab64a85a136cf6bd054ef660c4d93c"
+  },
+  "versionSelection": {
+    "version": "0.1.0",
+    "reason": "gh release list returned no releases on 2026-11-06; first unpublished process package version."
+  },
+  "hostCompatibility": {
+    "baseline": "d77f03b12a93d72cd2a56a73faa1a04fae94a2cd",
+    "unreviewedChangesRequired": false,
+    "gap": "Baseline hotkey handler ignores no-view feedback; launcher displays top-level message. No desktop QA claimed."
+  },
+  "toolingReferences": [
+    {
+      "repository": "google-search",
+      "source": "scripts/package.py",
+      "sha256": "7edc1a05be199cfa06cc9e060b7bf12e7ea90f1e38357a967a2f641b1f789c21",
+      "adaptation": "Copied/adapted packaging and verification tooling; all extension-specific branches/maps removed."
+    },
+    {
+      "repository": "google-search",
+      "source": "scripts/smoke-package.py",
+      "sha256": "a339d95209ae96437a966d72bd8046d9be7441e1c24d18b9aa1ef06abd5ac682",
+      "adaptation": "Copied/adapted packaging and verification tooling; all extension-specific branches/maps removed."
+    },
+    {
+      "repository": "code-review-emojis",
+      "source": "scripts/vendor-licenses.py",
+      "sha256": "c0f2c238a6e04fbf80f6d56b75b7be5897f770d6743ee55c0338092887a8164b",
+      "adaptation": "Copied/adapted packaging and verification tooling; all extension-specific branches/maps removed."
+    }
+  ]
+}
