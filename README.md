@@ -1,5 +1,17 @@
 # Markdown Table Generator for Tezbar
 
+**Native Rust 0.1.0 for Tezbar:** [release](https://github.com/almatkai/markdown-table-generator/releases/tag/v0.1.0), [macOS Apple Silicon ZIP](https://github.com/almatkai/markdown-table-generator/releases/download/v0.1.0/markdown-table-generator-aarch64-apple-darwin.zip), [Windows x64 ZIP](https://github.com/almatkai/markdown-table-generator/releases/download/v0.1.0/markdown-table-generator-x86_64-pc-windows-msvc.zip), [trusted install reference](https://github.com/almatkai/markdown-table-generator/releases/download/v0.1.0/extension-release.json).
+
+Requires a Tezbar build with schema-3 process extensions and the import CLI. Download the trusted JSON and your platform ZIP, then import:
+
+```sh
+tezbar --extensions-v3-import extension-release.json markdown-table-generator-<target>.zip
+```
+
+Both native platform builds, extracted-package protocol checks and actual Tezbar CLI installs into isolated profiles passed. [Validation and exact hashes](https://github.com/almatkai/markdown-table-generator/releases/download/v0.1.0/validation.json) record the tested source. Actual desktop effects remain unverified; Store discovery still needs a Tezbar catalog update.
+
+The accepted baseline does not show no-view hotkey messages. Clipboard copying is verified offline; hotkey feedback still needs an accepted host update.
+
 Generate markdown tables from row/column counts in Tezbar on Windows or macOS.
 
 ## Installable standalone Rust package
@@ -63,8 +75,8 @@ python3 scripts/smoke-package.py dist/markdown-table-generator-aarch64-apple-dar
 ```
 
 The package script also accepts `x86_64-pc-windows-msvc`, on a native Windows
-build host with the corresponding `.exe`. Windows builds and desktop verification
-are coordinated separately; a macOS build is not Windows evidence. Local Cargo
+build host with the corresponding `.exe`. Native Windows builds, package checks
+and isolated CLI imports have passed. Desktop verification remains separate. Local Cargo
 resolver configuration selects MSRV-compatible dependencies, and `Cargo.lock` is
 committed. No workflow builds are added. After dependency changes regenerate
 notices with `python3 scripts/vendor-licenses.py`; packaging checks them against
@@ -85,10 +97,10 @@ Installation requires a separately reviewed trusted release manifest whose
 Source and ZIP manifests leave `artifacts: {}` to avoid inventing published
 artifacts or embedding a circular ZIP hash. After review and publication, use
 Tezbar's catalog install or `tezbar --extensions-v3-import /absolute/trusted-release-manifest.json /absolute/package.zip`,
-then restart Tezbar. This repository does not alter the host catalog or publish
-releases. Version `0.1.0` is the first unpublished process version, selected after
-checking the repository release list. Independent package review, Windows artifact
-coordination and trusted release pins are required before release.
+then restart Tezbar. Version `0.1.0` is published with both native platform ZIPs
+and the trusted release reference after independent review and isolated installs.
+The host catalog is not updated by this repository. Real desktop clipboard/UI
+verification remains pending, distinct from the completed native package checks.
 
 Licensing: original sources/assets remain MIT; SDK and copied host schema are
 Apache-2.0. Original license files are preserved, with readable MIT/Apache texts
