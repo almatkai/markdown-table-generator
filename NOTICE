@@ -1,0 +1,20 @@
+Markdown Table Generator — standalone Rust process package
+
+Original extension author: Visual-Studio-Coder.
+Original command, metadata and command-icon.png: MIT.
+Source: https://github.com/raycast/extensions/tree/6734d85992290066fd31a7f5bee3cca3d3545a1a/extensions/markdown-table-generator
+Raycast repository MIT notice: Copyright (c) 2021 Raycast.
+Rust engine, original Tezbar port and process adapter: Copyright (c) 2026 almatkai, MIT.
+
+The unchanged pure Rust engine is reused from v2/src/lib.rs. Historical beta
+fixtures remain test-only in v2/ and are not compiled into the process binary.
+Tezbar Extension SDK is Apache-2.0; its original documents and all locked
+runtime/build dependency documents are included under licenses/crates/.
+See licenses/dependency-license-index.json and licenses/THIRD_PARTY.md.
+
+Package/ZIP verification tooling is adapted from the standalone Google Search
+extension's scripts/package.py and scripts/smoke-package.py (Apache-2.0,
+Copyright 2026 Almat). Dependency notice inventory tooling is adapted from
+Code Review Emojis scripts/vendor-licenses.py (MIT, Copyright 2026 almatkai).
+Modifications adapt these tools to this package; no Google Search domain source
+or assets are included. Reference content hashes are recorded in the repository's native/provenance.json.

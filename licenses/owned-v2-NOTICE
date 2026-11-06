@@ -1,0 +1,16 @@
+Markdown Table Generator — Native V2
+
+Original extension author: Visual-Studio-Coder.
+Source: https://github.com/raycast/extensions/tree/6734d85992290066fd31a7f5bee3cca3d3545a1a/extensions/markdown-table-generator
+Original command, metadata and command-icon.png: MIT.
+Raycast repository MIT notice: Copyright (c) 2021 Raycast.
+Rust implementation and adapter: MIT.
+
+Byte-exact Tezbar beta fixtures (common.rs, v2_sdk.rs, Native V2 format and
+schema) from commit fd300e276356587726566026f072563eb9c34cb1:
+Apache-2.0, Copyright 2026 Almat.
+These fixtures are unmodified; the test-only Tauri surface is a separate stub.
+
+The combined distributable includes MIT AND Apache-2.0 material. License texts
+are supplied in licenses/MIT.txt and licenses/Apache-2.0.txt.
+Individual source paths and SHA-256 hashes are recorded in provenance.json.
